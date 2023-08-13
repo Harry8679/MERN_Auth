@@ -1,13 +1,10 @@
 import React from 'react'
 import './Home.scss';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 import loginImage from '../../assets/login.svg';
 
 const Home = () => {
   return (
     <div>
-      <Header />
         <section className="container hero">
             <div className="hero-text">
                 <h2>Meilleur Système de Connexion avec les technologies MERN</h2>
@@ -28,7 +25,6 @@ const Home = () => {
                 <img src={loginImage} alt="Authentification" />
             </div>
         </section>
-      <Footer />
     </div>
   )
 }
