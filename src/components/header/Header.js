@@ -31,15 +31,15 @@ const Header = () => {
             </li>
             <li>
                 <button className="--btn --btn-primary">
-                    <Link to='/login'>Connexion</Link>
+                    <Link to='/connexion'>Connexion</Link>
                 </button>
             </li>
             <li>
-                <NavLink to='/profile' className={activeLink}>Profil</NavLink>
+                <NavLink to='/profil' className={activeLink}>Profil</NavLink>
             </li>
             <li>
                 <button className="--btn --btn-secondary">
-                    <Link to='/login'>Déconnexion</Link>
+                    <Link to='/connexion'>Déconnexion</Link>
                 </button>
             </li>
         </ul>
