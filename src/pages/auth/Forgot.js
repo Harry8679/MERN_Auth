@@ -22,7 +22,7 @@ const Forgot = () => {
             <form onSubmit={forgotPassword}>
                 <input type="email" placeholder='Email' required name='email' value={email} onChange={handleInputChange} />
 
-                <button type='submit' className="--btn --btn-primary --btn-block">Connexion</button>
+                <button type='submit' className="--btn --btn-primary --btn-block">Confirmer</button>
                 <div className={styles.links}>
                     <p><Link to='/'>- Accueil</Link></p>
                     <p><Link to='/connexion'>- Connexion</Link></p>
