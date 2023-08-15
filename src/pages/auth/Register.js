@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './auth.module.scss';
 import Card from '../../components/card/Card';
 import { TiUserAddOutline } from 'react-icons/ti';
@@ -39,6 +39,36 @@ const Register = () => {
     setFormData({ ...formData, [name]: value });
   }
 
+  useEffect(() => {
+    // Check Lowercase and Uppercase
+    if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
+        setUCase(true);
+    } else {
+        setUCase(false);
+    }
+
+    // Check for numbers
+    if (password.match(/([0-9])/)) {
+        setNum(true)
+    } else {
+        setNum(false)
+    }
+
+    // Check for the special characters
+    if (password.match(/([!,@,#,$,%,^,&,*,_,~])/)) {
+        setSChar(true);
+    } else {
+        setSChar(false);
+    }
+
+    // check for Password Length
+    if (password.length > 5) {
+        setPassLength(true);
+    } else {
+        setPassLength(false);
+    }
+  }, [password]);
+
   const loginUser = () => {};
   return (
     <div className={`container ${styles.auth}`}>
@@ -71,7 +101,7 @@ const Register = () => {
                         </li>
                         <li>
                             <span className={styles.indicator}>
-                                {swithIcon(sChar)} &nbsp; Au moins un caractère spécial (!@#$%^&*).
+                                {swithIcon(sChar)} &nbsp; Au moins un caractère spécial (!@#$%^&*_,~).
                             </span>
                         </li>
                         <li>
