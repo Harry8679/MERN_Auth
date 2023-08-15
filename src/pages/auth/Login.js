@@ -33,7 +33,7 @@ const Login = () => {
 
                 <button type='submit' className="--btn --btn-primary --btn-block">Connexion</button>
             </form>
-            <Link to='/forgot'>Mot de passe oublié</Link>
+            <Link to='/mot-de-passe-oublie'>Mot de passe oublié</Link>
 
             <span className={styles.register}>
                 <Link to='/'>Accueil</Link>

@@ -69,7 +69,7 @@ const Register = () => {
     }
   }, [password]);
 
-  const loginUser = () => {};
+  const registerUser = () => {};
   return (
     <div className={`container ${styles.auth}`}>
       <Card>
@@ -79,7 +79,7 @@ const Register = () => {
             </div>
             <h2>Inscription</h2>
 
-            <form onSubmit={loginUser}>
+            <form onSubmit={registerUser}>
                 <input type="text" placeholder='Nom' required name='name' value={name} onChange={handleInputChange} />
                 <input type="email" placeholder='Email' required name='email' value={email} onChange={handleInputChange} />
                 {/* <input type="password" placeholder='Mot de passe' required name='password' value={password} onChange={handleInputChange} /> */}
