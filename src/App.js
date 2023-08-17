@@ -8,6 +8,7 @@ import Reset from './pages/auth/Reset';
 import LoginWithCode from './pages/auth/LoginWithCode';
 import Verify from './pages/auth/Verify';
 import Profile from './pages/profile/Profile';
+import ChangePassword from './pages/changePassword/ChangePassword';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route element={<LoginWithCode />} path='/connexion-avec-code/:email' />
           <Route element={<Layout><Verify /></Layout>} path='/verification/:verificationToken' />
           <Route element={<Layout><Profile /></Layout>} path='/profil' />
+          <Route element={<Layout><ChangePassword /></Layout>} path='/modifier-votre-mot-de-passe' />
         </Routes>
       </Router>
     </>
