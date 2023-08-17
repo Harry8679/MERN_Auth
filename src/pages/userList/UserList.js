@@ -4,6 +4,7 @@ import PageMenu from '../../components/pageMenu/PageMenu';
 import UserStats from '../../components/userStats/UserStats';
 import Search from '../../components/search/Search';
 import { FaTrashAlt } from 'react-icons/fa';
+import ChangeRole from '../../components/changeRole/ChangeRole';
 
 const UserList = () => {
   return (
@@ -35,7 +36,9 @@ const UserList = () => {
                             <td>EBANG</td>
                             <td>ebang.mezui@wizards.us</td>
                             <td>Admin</td>
-                            <td>Changer de rôle</td>
+                            <td>
+                                <ChangeRole />
+                            </td>
                             <td>
                                 <span>
                                     <FaTrashAlt size={20} color='red' />
