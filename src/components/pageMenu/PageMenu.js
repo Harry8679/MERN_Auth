@@ -13,7 +13,7 @@ const PageMenu = () => {
                 <NavLink to='/modifier-votre-mot-de-passe'>Modifier le mot de passe</NavLink>
             </li>
             <li>
-                <NavLink to='/users'>Utilisateurs</NavLink>
+                <NavLink to='/liste-des-utilisateurs'>Utilisateurs</NavLink>
             </li>
         </ul>
       </nav>

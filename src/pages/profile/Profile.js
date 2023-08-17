@@ -23,8 +23,8 @@ const Profile = () => {
     <section>
       <div className="container">
         <PageMenu />
-        <h2>Profil</h2>
-        <div className="--flex-start profile">
+        <h2 className='--flex-center'>Profil</h2>
+        <div className="--flex-center profile">
             <Card className={'card'}>
                 <>
                 <div className='profile-photo'>
